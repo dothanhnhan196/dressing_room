@@ -1,15 +1,31 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-export default class Categories extends Component {
+class Categories extends Component {
+
+    renderCategoriesBtn = () => {
+        let { categories } = this.props
+        return Object.values(categories).map((item, index) => {
+            return (
+                <div key={index} className="btn btn-secondary">{item.showName}</div>
+            )
+        }, console.log(this.props.categories))
+    }
+
     render() {
         return (
             <div className="btn-group">
-                <button className="button">Quần áo</button>
-                <button className="button">Phụ kiện</button>
-                <button className="button">Tóc</button>
-                <button className="button">Người mẫu</button>
-                <button className="button">Khung nền</button>
+                {this.renderCategoriesBtn()}
             </div>
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        categories: state.CategoriesReducer
+    }
+}
+
+export default connect(mapStateToProps, null)(Categories)
+

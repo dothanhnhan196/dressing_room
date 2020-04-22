@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 class Products extends Component {
     renderProductsList = () => {
         let { products } = this.props
-        console.log(products)
         return products.map((item, index) => {
             return (
                 <div className="col-4" key={index}>
