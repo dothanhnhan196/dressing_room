@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './StyleHeader.css'
 
 export default class Header extends Component {
     render() {
@@ -6,11 +7,7 @@ export default class Header extends Component {
             <div className="card">
                 <div className="card-background">
                 </div>
-                <div className="useravatar">
-                    <img alt="cybersoft.edu.vn" src="images/cybersoft.png" />
-                </div>
-                <div className="card-info"> <span className="card-title">CyberSoft.edu.vn - Đào tạo chuyên gia lập trình - Dự án thử đồ trực tuyến - Virtual Dressing Room</span>
-                </div>
+                <div className="card-info"> <h3 className="card-title text-center">Dressing Room</h3></div>
             </div>
         )
     }

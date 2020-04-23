@@ -1,5 +1,7 @@
-let stateProduct = {
-    products: [
+const stateProduct = {
+    productList: [
+
+        // Top clothes
         {
             id: 'topcloth_1',
             type: "topclothes",
@@ -271,9 +273,6 @@ let stateProduct = {
     ]
 }
 
-export const ProductReducer = (state = stateProduct, action) => {
-    switch (action.type) {
-        default:
-            return { ...state }
-    }
+export const ProductReducer = (state = stateProduct.productList, action) => {
+    return state
 }

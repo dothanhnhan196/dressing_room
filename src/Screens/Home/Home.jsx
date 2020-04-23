@@ -19,6 +19,7 @@ export default class Home extends Component {
                         <Model />
                     </div>
                 </div>
+                <br/>
                 <Footer />
             </div>
         )

@@ -4,10 +4,10 @@ import { connect } from 'react-redux'
 
 class Products extends Component {
     renderProductsList = () => {
-        let { products } = this.props
-        return products.map((item, index) => {
+        let { products, choosenCategory } = this.props
+        return products.filter(item => item.type === choosenCategory).map((item, index) => {
             return (
-                <div className="col-4" key={index}>
+                <div className="col-3 mt-2" key={index}>
                     <ProductItem item={item} />
                 </div>
             )
@@ -16,15 +16,18 @@ class Products extends Component {
 
     render() {
         return (
-            <div className="row">
-                {this.renderProductsList()}
+            <div className="card contaier-fluid">
+                <div className="row">
+                    {this.renderProductsList()}
+                </div>
             </div>
         )
     }
 }
 const mapStateToProps = (state) => {
     return {
-        products: state.ProductReducer.products
+        products: state.ProductReducer,
+        choosenCategory: state.ChoosenCategory
     }
 }
 
