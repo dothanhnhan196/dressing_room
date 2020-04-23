@@ -269,7 +269,7 @@ const stateProduct = {
             desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
             imgSrc_jpg: './images/background/background7_show.jpg',
             imgSrc_png: './images/background/background7.jpg',
-        },
+        }
     ]
 }
 

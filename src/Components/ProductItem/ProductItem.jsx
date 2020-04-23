@@ -16,11 +16,13 @@ class ProductItem extends Component {
     render() {
         let { imgSrc_jpg, name } = this.props.item
         return (
-            <>
-                <img src={imgSrc_jpg} alt={imgSrc_jpg} />
-                <p>{name}</p>
-                <button className="btn btn-success" onClick={() => this._chooseCloth(this.props.item)}>Thử đồ</button>
-            </>
+            <div>
+                <img className="card-img-top" src={imgSrc_jpg} alt={imgSrc_jpg} />
+                <div className="card-body">
+                    <p className="card-title">{name}</p>
+                    <button className="btn btn-outline-success" onClick={() => this._chooseCloth(this.props.item)}>Thử đồ</button>
+                </div>
+            </div>
         )
     }
 }

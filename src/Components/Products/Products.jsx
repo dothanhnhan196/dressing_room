@@ -16,11 +16,14 @@ class Products extends Component {
 
     render() {
         return (
-            <div className="card contaier-fluid">
-                <div className="row">
-                    {this.renderProductsList()}
+            <div className="card-group container-fluid">
+                <div className="card" style={{ width: '700px' }}>
+                    <div className="row">
+                        {this.renderProductsList()}
+                    </div>
                 </div>
             </div>
+
         )
     }
 }

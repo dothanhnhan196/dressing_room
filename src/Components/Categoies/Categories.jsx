@@ -9,8 +9,9 @@ class Categories extends Component {
         return categoriesList.map((item, index) => {
             return (
                 <div
-                    key={index} className={choosenCategory === item.type ? 'btn btn-primary' : ' btn btn-light'}
-                    onClick={() => setcategory(item.type)}>{item.showName}
+                    key={index} className={choosenCategory === item.type ? 'btn btn-info' : ' btn btn-secondary'}
+                    onClick={() => setcategory(item.type)}>
+                    {item.showName}
                 </div>
             )
         })
@@ -18,7 +19,7 @@ class Categories extends Component {
 
     render() {
         return (
-            <div className="btn-group mt-3 container-fluid">
+            <div class="btn-group container-fluid mb-1" role="group" aria-label="Basic example">
                 {this.renderCategoriesBtn()}
             </div>
         )

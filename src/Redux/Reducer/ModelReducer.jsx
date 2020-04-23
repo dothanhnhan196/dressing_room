@@ -1,6 +1,11 @@
 const stateModel = {
     topclothes: '',
     botclothes: '',
+    shoes: '',
+    handbags: '',
+    necklaces: '',
+    hairstyle: '',
+    background: '',
 }
 
 export const ModalReducer = (state = stateModel, action) => {

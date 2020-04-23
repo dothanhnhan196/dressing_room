@@ -3,7 +3,7 @@
 .contain {
     width: 460px;
     height: 590px;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative;
 }
 
@@ -58,4 +58,35 @@
     bottom: 6.5%;
     right: 33.3%;
     z-index: 1;
+}
+
+.handbagStyle {
+    width: 500px;
+    height: 1000px;
+    position: absolute;
+    bottom: 40.5%;
+    right: -3.5%;
+    transform: scale(0.5);
+    z-index: 4;
+}
+
+.backgroundStyle {
+    width: 900px;
+    height: 1500px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -90%;
+    right: -50%;
+    transform: scale(0.5);
+    z-index: -9999
+}
+
+.hairStyle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: -75%;
+    right: -57%;
+    transform: scale(0.15);
+    z-index: 4
 }

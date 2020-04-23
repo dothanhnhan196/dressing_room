@@ -13,7 +13,7 @@ class Model extends Component {
             bikinibottom: "images/allbody/bikini_pantsnew.png",
             model: "images/model/1000new.png",
             feetleft: "images/allbody/feet_high_leftnew.png",
-            feetright: "images/allbody/feet_high_rightnew.png"
+            feetright: "images/allbody/feet_high_rightnew.png",
         }
     }
 
@@ -23,13 +23,17 @@ class Model extends Component {
             <>
                 <div className="bikinitop" style={{ backgroundImage: `url(${model.topclothes})`, backgroundSize: 'cover' }}></div>
                 <div className="bikinibottom" style={{ backgroundImage: `url(${model.botclothes})`, backgroundSize: 'cover' }}></div>
+                <div className="bikinibottom" style={{ backgroundImage: `url(${model.shoes})`, backgroundSize: 'cover' }}></div>
+                <div className="bikinitop" style={{ backgroundImage: `url(${model.handbags})`, backgroundSize: 'cover' }}></div>
+                <div className="bikinitop" style={{ backgroundImage: `url(${model.necklaces})`, backgroundSize: 'cover' }}></div>
+                <div className="feetleft" style={{ backgroundImage: `url(${model.handbags})`, backgroundSize: 'cover' }}></div>
             </>
         )
     }
 
     render() {
         return (
-            <div className="contain mt-3" style={{ background: `url(${this.state.contain})` }}>
+            <div className="contain" style={{ background: `url(${this.state.contain})` }}>
                 <div className="body" style={{ background: `url(${this.state.body})` }}></div>
                 <div className="model" style={{ background: `url(${this.state.model})` }}></div>
                 <div className="bikinitop" style={{ background: `url(${this.state.bikinitop})` }}></div>

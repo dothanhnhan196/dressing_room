@@ -10,7 +10,7 @@ export default class Home extends Component {
         return (
             <div>
                 <Header />
-                <div className="row">
+                <div className="row mt-2">
                     <div className="col-6">
                         <Categories />
                         <Products />
@@ -19,7 +19,6 @@ export default class Home extends Component {
                         <Model />
                     </div>
                 </div>
-                <br/>
                 <Footer />
             </div>
         )
